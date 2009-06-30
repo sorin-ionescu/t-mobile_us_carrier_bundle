@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo Making carrier bundle bundle...
+find . -type f -name '.DS_Store' -exec rm {} \;
+rm -rf T-Mobile_US.ipcc
+zip -r -y TMobile_US.ipcc Payload/
+echo Done.
