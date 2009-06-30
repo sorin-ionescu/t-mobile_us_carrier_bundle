@@ -1,4 +1,16 @@
 #!/bin/bash
+#===============================================================================
+#
+#          FILE:  make-bundle
+#
+#         USAGE:  ./make-bundle
+#
+#   DESCRIPTION:  Makes T-Mobile US carrier bundles.
+#
+#        AUTHOR:  SpookyET, spookyet@gmail.com
+#       VERSION:  1.0.2
+#       CREATED:  2009-06-30 23:34:57+00:00
+#===============================================================================
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
 for BRANCH in `git branch | sed -e 's/* //'`
