@@ -1,7 +1,15 @@
 #!/bin/bash
 
 echo Making carrier bundle bundle...
-find . -type f -name '.DS_Store' -exec rm {} \;
-rm -rf T-Mobile_US.ipcc
-zip -r -y TMobile_US.ipcc Payload/
-echo Done.
+CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
+for BRANCH in `git branch | sed -e 's/* //'`
+do
+	if [[ $BRANCH =~ 'master' ]]
+		continue
+	fi
+	git checkout $BRANCH
+	find . -type f -name '.DS_Store' -exec rm {} \;
+	rm -rf T-Mobile_US.ipcc
+	zip -r -y ../TMobile_US-$BRANCH.ipcc Payload/
+done
+git checkout $CURRENT_BRANCH
