@@ -13,6 +13,7 @@
 #===============================================================================
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
+VERSION=`git tag | tail`
 for BRANCH in `git branch | sed -e 's/* //'`
 do
 	if [[ $BRANCH =~ 'master' ]]
@@ -27,8 +28,9 @@ do
 	fi
 	find . -type f -name '.DS_Store' -exec rm {} \;
 	rm -rf T-Mobile_US.ipcc
-	BUNDLE_NAME="TMobile_US-$BRANCH.ipcc"
+	BUNDLE_NAME="TMobile_us-$BRANCH-$VERSION.ipcc"
 	echo Making carrier bundle $BUNDLE_NAME
 	zip -r -y "$BUNDLE_NAME" Payload/
 done
+zip -r -y "T-Mobile USA Carrier Bundle $VERSION" TMobile_us*
 git checkout $CURRENT_BRANCH
