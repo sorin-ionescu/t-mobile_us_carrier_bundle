@@ -17,6 +17,6 @@ do
 	rm -rf T-Mobile_US.ipcc
 	BUNDLE_NAME="TMobile_US-$BRANCH.ipcc"
 	echo Making carrier bundle $BUNDLE_NAME
-	zip -r -y "../$BUNDLE_NAME" Payload/
+	zip -r -y "$BUNDLE_NAME" Payload/
 done
 git checkout $CURRENT_BRANCH
