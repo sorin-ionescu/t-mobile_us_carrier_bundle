@@ -28,9 +28,9 @@ do
 	fi
 	find . -type f -name '.DS_Store' -exec rm {} \;
 	rm -rf T-Mobile_US.ipcc
-	BUNDLE_NAME="TMobile_us-$BRANCH-$VERSION.ipcc"
+	BUNDLE_NAME="TMobile_us_$BRANCH-$VERSION.ipcc"
 	echo Making carrier bundle $BUNDLE_NAME
 	zip -r -y "$BUNDLE_NAME" Payload/
 done
-zip -r -y "T-Mobile USA Carrier Bundle $VERSION" TMobile_us*
+zip -r -y "TMobile_us_carrier_bundles_$VERSION.zip" TMobile_us*
 git checkout $CURRENT_BRANCH
