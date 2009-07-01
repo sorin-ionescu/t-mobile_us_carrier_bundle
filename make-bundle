@@ -33,6 +33,6 @@ do
 	echo Making carrier bundle $BUNDLE_NAME
 	zip -r -y "$BUNDLE_NAME" Payload/
 done
-zip $PACKAGE README.txt TMobile_us* -x $PACKAGE
+zip $PACKAGE README.txt 
 rm -f *.ipcc
 git checkout $CURRENT_BRANCH
