@@ -14,6 +14,7 @@
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
 VERSION=`git tag | tail`
+PACKAGE="TMobile_us_carrier_bundles_$VERSION.zip"
 for BRANCH in `git branch | sed -e 's/* //'`
 do
 	if [[ $BRANCH =~ 'master' ]]
@@ -32,6 +33,6 @@ do
 	echo Making carrier bundle $BUNDLE_NAME
 	zip -r -y "$BUNDLE_NAME" Payload/
 done
-zip -y "TMobile_us_carrier_bundles_$VERSION.zip" README.txt TMobile_us*
+zip $PACKAGE README.txt TMobile_us* -x $PACKAGE
 rm -f *.ipcc
 git checkout $CURRENT_BRANCH
