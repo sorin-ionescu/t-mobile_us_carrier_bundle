@@ -17,7 +17,7 @@ VERSION=`git tag | tail`
 PACKAGE="TMobile_us_carrier_bundles_$VERSION.zip"
 for BRANCH in `git branch | sed -e 's/* //'`
 do
-	if [[ $BRANCH =~ 'master' ]]
+	if [[ $BRANCH =~ 'master' ]] || [[ $BRANCH = 'tmobile_logo' ]]
 	then
 		continue
 	fi
