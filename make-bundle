@@ -14,10 +14,10 @@
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
 VERSION=`git tag | tail`
-PACKAGE="TMobile_us_carrier_bundles_$VERSION.zip"
+PACKAGE="TMobile_us_carrier_bundles_v$VERSION.zip"
 for BRANCH in `git branch | sed -e 's/* //'`
 do
-	if [[ $BRANCH =~ 'master' ]] || [[ $BRANCH = 'tmobile_logo' ]]
+	if [[ $BRANCH =~ 'master' ]]
 	then
 		continue
 	fi
@@ -29,7 +29,7 @@ do
 	fi
 	find . -type f -name '.DS_Store' -exec rm {} \;
 	rm -rf T-Mobile_US.ipcc
-	BUNDLE_NAME="TMobile_us_${BRANCH}_${VERSION}.ipcc"
+	BUNDLE_NAME="TMobile_us_${BRANCH}.ipcc"
 	echo Making carrier bundle $BUNDLE_NAME
 	zip -r -y "$BUNDLE_NAME" Payload/
 done
