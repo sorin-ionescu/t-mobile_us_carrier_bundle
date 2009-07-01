@@ -33,6 +33,12 @@ do
 	echo Making carrier bundle $BUNDLE_NAME
 	zip -r -y "$BUNDLE_NAME" Payload/
 done
+
+for postpaid in $( find . -depth 1 -type f -name '*postpaid*' )
+do
+	cp $postpaid $( echo $postpaid | sed -e 's/postpaid/flexpaid/' )
+done
+
 zip $PACKAGE README.txt TMobile_us* -x $PACKAGE
 rm -f *.ipcc
 git checkout $CURRENT_BRANCH
