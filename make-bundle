@@ -13,7 +13,7 @@
 #===============================================================================
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
-VERSION=`git tag | tail`
+VERSION=`git tag | tail -n 1`
 PACKAGE="TMobile_us_carrier_bundles_$VERSION.zip"
 for BRANCH in `git branch | sed -e 's/* //'`
 do
