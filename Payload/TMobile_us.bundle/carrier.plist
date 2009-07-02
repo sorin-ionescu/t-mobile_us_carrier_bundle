@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowEDGEEditing</key>
+	<true/>
+	<key>AllowMMSCEditing</key>
+	<true/>
+	<key>AllowMMSEditing</key>
+	<true/>
 	<key>BookmarkURLs</key>
 	<array>
 		<dict>
