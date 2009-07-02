@@ -21,7 +21,7 @@ do
 	then
 		continue
 	fi
-	git checkout $BRANCH
+	git checkout $BRANCH &> /dev/null
 	if [[ $? -ne 0 ]]
 	then
 		echo "ERROR: Cannot change branch."
@@ -31,14 +31,15 @@ do
 	rm -rf T-Mobile_US.ipcc
 	BUNDLE_NAME="TMobile_us_${BRANCH}.ipcc"
 	echo Making carrier bundle $BUNDLE_NAME
-	zip -r -y "$BUNDLE_NAME" Payload/
+	zip -r -y "$BUNDLE_NAME" Payload/ &> /dev/null
 done
-
 for postpaid in $( find . -depth 1 -type f -name '*postpaid*' )
 do
-	cp $postpaid $( echo $postpaid | sed -e 's/postpaid/flexpaid/' )
+	flexpaid=$( echo $postpaid | sed -e 's/.\///' -e 's/postpaid/flexpaid/' )
+	echo Making carrier bundle $flexpaid
+	cp $postpaid $flexpaid
 done
-
-zip $PACKAGE README.txt TMobile_us* -x $PACKAGE
+echo Making package $PACKAGE 
+zip $PACKAGE README.txt TMobile_us* -x $PACKAGE &> /dev/null
 rm -f *.ipcc
-git checkout $CURRENT_BRANCH
+git checkout $CURRENT_BRANCH &> /dev/null
