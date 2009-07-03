@@ -14,6 +14,7 @@
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
 VERSION=`git tag | tail -n 1`
+PACKAGE_VERSION=1
 PACKAGE="TMobile_us_carrier_bundles_$VERSION.zip"
 for BRANCH in `git branch | sed -e 's/* //'`
 do
@@ -33,7 +34,7 @@ do
 	rm -rf $BUNDLE_NAME 
 	zip -r -y "$BUNDLE_NAME" Payload/ &> /dev/null
 
-	PACKAGE_NAME="TMobile_us_${BRANCH}_${version}-1_iphoneos-arm"
+	PACKAGE_NAME="TMobile_us_${BRANCH}_${VERSION}-${PACKAGE_VERSION}_iphoneos-arm"
 	mkdir $PACKAGE_NAME 
 	mkdir -p ${PACKAGE_NAME}/DEBIAN
 	mkdir -p ${PACKAGE_NAME}/System/Library/Carrier\ Bundles/
@@ -42,6 +43,6 @@ do
 	dpkg -b $PACKAGE_NAME ${PACKAGE_NAME}.deb
 done
 echo Making package $PACKAGE 
-zip $PACKAGE README.txt TMobile_us* -x $PACKAGE &> /dev/null
+zip $PACKAGE README.txt TMobile_us*.ipcc -x $PACKAGE &> /dev/null
 rm -f *.ipcc
 git checkout $CURRENT_BRANCH &> /dev/null
