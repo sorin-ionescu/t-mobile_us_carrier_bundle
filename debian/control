@@ -1,7 +1,7 @@
 Website: http://www.tr.im/qu4F
-Maintainer: SpookyET <spookyet@gmail.com>
-Name: T-Mobile US Carrier Support - 
-Package: spookyet.t-mobile-us-carrier-support-
+Maintainer: Sorin Ionescu <sorin.ionescu@gmail.com>
+Name: T-Mobile US - 
+Package: spookyet.t-mobile-us-
 Section: Tweaks
 Version: 1.0.5
 Architecture: iphoneos-arm
