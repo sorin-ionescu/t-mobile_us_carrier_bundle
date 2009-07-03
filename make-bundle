@@ -14,7 +14,7 @@
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
 VERSION=`git tag | tail -n 1`
-PACKAGE_VERSION=1
+PACKAGE_VERSION=3
 PACKAGE="t-mobile-us-carrier-support_$VERSION"
 for BRANCH in `git branch | sed -e 's/* //'`
 do
@@ -44,9 +44,9 @@ do
 	dpkg -b $PACKAGE_NAME ${PACKAGE_NAME}.deb &> /dev/null
 	rm -rf ${PACKAGE_NAME}
 done
-echo Making package ${PACKAGE}.ipcc.zip
-zip ${PACKAGE}.ipcc.zip README.txt t-mobile-us*.ipcc -x $PACKAGE &> /dev/null
-echo Making package ${PACKAGE}.deb.zip
-zip ${PACKAGE}.deb.zip t-mobile-us*.deb -x $PACKAGE &> /dev/null
+echo Making package ${PACKAGE}-${PACKAGE_VERSION}.ipcc.zip
+zip ${PACKAGE}-${PACKAGE_VERSION}.ipcc.zip README.txt t-mobile-us*.ipcc -x $PACKAGE &> /dev/null
+echo Making package ${PACKAGE}-${PACKAGE_VERSION}.deb.zip
+zip ${PACKAGE}-${PACKAGE_VERSION}.deb.zip t-mobile-us*.deb -x $PACKAGE &> /dev/null
 rm -f *.ipcc *.deb
 git checkout $CURRENT_BRANCH &> /dev/null
