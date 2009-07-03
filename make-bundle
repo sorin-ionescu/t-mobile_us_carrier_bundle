@@ -34,17 +34,19 @@ do
 	rm -rf $BUNDLE_NAME 
 	zip -r -y "$BUNDLE_NAME" Payload/ &> /dev/null
 
-	PACKAGE_NAME="t-mobile-us-carrier-support_${BRANCH}_${VERSION}-${PACKAGE_VERSION}_iphoneos-arm"
+	PACKAGE_NAME="t-mobile-us-carrier-support-$( echo $BRANCH | sed -e 's/_/-/' )_${VERSION}-${PACKAGE_VERSION}_iphoneos-arm"
+	echo Making Cydia/Icy package $PACKAGE_NAME
 	mkdir $PACKAGE_NAME 
 	mkdir -p ${PACKAGE_NAME}/DEBIAN
 	mkdir -p ${PACKAGE_NAME}/System/Library/Carrier\ Bundles/
 	cp -r debian/* ${PACKAGE_NAME}/DEBIAN
 	cp -r Payload/* ${PACKAGE_NAME}/System/Library/Carrier\ Bundles/
-	dpkg -b $PACKAGE_NAME ${PACKAGE_NAME}.deb
+	dpkg -b $PACKAGE_NAME ${PACKAGE_NAME}.deb &> /dev/null
 	rm -rf ${PACKAGE_NAME}
 done
-echo Making package $PACKAGE 
+echo Making package ${PACKAGE}.ipcc.zip
 zip ${PACKAGE}.ipcc.zip README.txt t-mobile-us*.ipcc -x $PACKAGE &> /dev/null
+echo Making package ${PACKAGE}.deb.zip
 zip ${PACKAGE}.deb.zip t-mobile-us*.deb -x $PACKAGE &> /dev/null
 rm -f *.ipcc *.deb
 git checkout $CURRENT_BRANCH &> /dev/null
