@@ -1,10 +1,12 @@
 Website: http://www.tr.im/qu4F
 Maintainer: SpookyET <spookyet@gmail.com>
-Name: T-Mobile US 
-Package: tweak.spookyet.tmobile-prepaid 
+Name: T-Mobile US Carrier Support - 
+Package: spookyet.t-mobile-us-carrier-support-
 Section: Tweaks
 Version: 1.0.5
 Architecture: iphoneos-arm
+Provides: t-mobile-us-carrier-support
+Conflicts:t-mobile-us-carrier-support
 Description: T-Mobile US carrier support for
 Sponsor: spookyet.wordpress.com <http://spookyet.wordpress.com>
 
