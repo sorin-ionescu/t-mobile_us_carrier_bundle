@@ -28,10 +28,18 @@ do
 		exit 1
 	fi
 	find . -type f -name '.DS_Store' -exec rm {} \;
-	rm -rf T-Mobile_US.ipcc
 	BUNDLE_NAME="TMobile_us_${BRANCH}.ipcc"
 	echo Making carrier bundle $BUNDLE_NAME
+	rm -rf $BUNDLE_NAME 
 	zip -r -y "$BUNDLE_NAME" Payload/ &> /dev/null
+
+	PACKAGE_NAME="TMobile_us_${BRANCH}_${version}-1_iphoneos-arm"
+	mkdir $PACKAGE_NAME 
+	mkdir -p ${PACKAGE_NAME}/DEBIAN
+	mkdir -p ${PACKAGE_NAME}/System/Library/Carrier\ Bundles/
+	cp -r debian/* ${PACKAGE_NAME}/DEBIAN
+	cp -r Payload/* ${PACKAGE_NAME}/System/Library/Carrier\ Bundles/
+	dpkg -b $PACKAGE_NAME ${PACKAGE_NAME}.deb
 done
 echo Making package $PACKAGE 
 zip $PACKAGE README.txt TMobile_us* -x $PACKAGE &> /dev/null
