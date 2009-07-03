@@ -14,7 +14,7 @@
 
 CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
 VERSION=`git tag | tail -n 1`
-PACKAGE_VERSION=3
+PACKAGE_VERSION=4
 PACKAGE="t-mobile-us-carrier-support_$VERSION"
 for BRANCH in `git branch | sed -e 's/* //'`
 do
