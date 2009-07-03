@@ -1,12 +1,14 @@
-Website: http://www.tr.im/qu4F
-Maintainer: Sorin Ionescu <sorin.ionescu@gmail.com>
+Author: Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
+Maintainer: Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
 Name: T-Mobile US - 
-Package: spookyet.t-mobile-us-
+Package: com.spookyet.t-mobile-us.
 Section: Tweaks
 Version: 1.0.5
 Architecture: iphoneos-arm
-Provides: t-mobile-us-carrier-support
-Conflicts:t-mobile-us-carrier-support
+Provides: com.spookyet.t-mobile-us
+Conflicts: com.spookyet.t-mobile-us
 Description: T-Mobile US carrier support for
+ Reboot after installation/uninstallation.
 Sponsor: spookyet.wordpress.com <http://spookyet.wordpress.com>
+Website: http://tr.im/qu4F
 
