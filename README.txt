@@ -4,8 +4,8 @@ CREDIT
 
 _____________________________________________________________________________________
 
-SpookyET <spookyet@gmail.com>
-ironicirony (Sony Ericsson user agent faking)
+Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
+ironicirony (SonyEricsson User-Agent faking)
 
 _____________________________________________________________________________________
 

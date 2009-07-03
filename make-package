@@ -1,0 +1,65 @@
+#!/bin/bash
+#===============================================================================
+#
+#          FILE:  make-bundle
+#
+#         USAGE:  ./make-bundle
+#
+#   DESCRIPTION:  Makes T-Mobile US carrier bundles.
+#
+#        AUTHOR:  SpookyET, spookyet@gmail.com
+#       VERSION:  1.0.3
+#       CREATED:  2009-07-03 22:10:51+00:00
+#===============================================================================
+
+CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
+VERSION=`git tag | tail -n 1`
+
+IPCC_PACKAGE_VERSION=1
+IPCC_PACKAGE_NAME="spookyet.t-mobile-us"
+
+DEB_PACKAGE_VERSION=1
+DEB_PACKAGE_NAME="com.spookyet.t-mobile-us"
+
+for branch in `git branch | sed -e 's/* //'`
+do
+	if [[ $branch =~ 'master' ]]
+	then
+		continue
+	fi
+	
+	git checkout $branch &> /dev/null
+	
+	if [[ $? -ne 0 ]]
+	then
+		echo "ERROR: Cannot change branch."
+		exit 1
+	fi
+
+	# IPCC
+	find . -type f -name '.DS_Store' -exec rm {} \;
+	bundle_name="t-mobile-us-${branch}.ipcc"
+	echo Making carrier bundle $bundle_name
+	rm -rf $bundle_name 
+	zip -r -y "$bundle_name" Payload/ &> /dev/null
+
+	# DEB
+	bundle_name="$DEB_PACKAGE_NAME-$( echo $branch | sed -e 's/_/-/' )_${VERSION}-${DEB_PACKAGE_VERSION}_iphoneos-arm"
+	echo Making Cydia/Icy package $bundle_name.deb
+	mkdir $bundle_name 
+	mkdir -p ${bundle_name}/DEBIAN
+	mkdir -p ${bundle_name}/System/Library/Carrier\ Bundles/
+	cp -r debian/* ${bundle_name}/DEBIAN
+	cp -r Payload/* ${bundle_name}/System/Library/Carrier\ Bundles/
+	dpkg -b $bundle_name ${bundle_name}.deb &> /dev/null
+	rm -rf ${bundle_name}
+done
+
+echo Making package ${IPCC_PACKAGE_NAME}_${VERSION}-${IPCC_PACKAGE_VERSION}.ipcc.zip
+zip ${IPCC_PACKAGE_NAME}_${VERSION}-${IPCC_PACKAGE_VERSION}.ipcc.zip README.txt *.ipcc &> /dev/null
+
+echo Making package ${DEB_PACKAGE_NAME}_${VERSION}-${DEB_PACKAGE_VERSION}.deb.zip
+zip ${DEB_PACKAGE_NAME}_${VERSION}-${DEB_PACKAGE_VERSION}.deb.zip *.deb &> /dev/null
+
+rm -f *.ipcc *.deb
+git checkout $CURRENT_BRANCH &> /dev/null
