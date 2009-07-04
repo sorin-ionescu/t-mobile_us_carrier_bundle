@@ -18,7 +18,7 @@ VERSION=`git tag | tail -n 1`
 IPCC_PACKAGE_VERSION=1
 IPCC_PACKAGE_NAME="spookyet.t-mobile-us"
 
-DEB_PACKAGE_VERSION=1
+DEB_PACKAGE_VERSION=2
 DEB_PACKAGE_NAME="com.spookyet.t-mobile-us"
 
 for branch in `git branch | sed -e 's/* //'`
