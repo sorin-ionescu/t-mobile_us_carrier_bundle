@@ -1,5 +1,5 @@
 Author: Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
-Maintainer: Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
+Maintainer: poetic_folly <poetic_folly@modmyi.com>
 Name: T-Mobile US - 
 Package: com.spookyet.t-mobile-us.
 Section: Tweaks
@@ -8,7 +8,15 @@ Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
 Description: T-Mobile US carrier support for
- Reboot after installation/uninstallation.
-Sponsor: spookyet.wordpress.com <http://spookyet.wordpress.com>
-Website: http://tr.im/qu4F
-
+ Reboot after installation/uninstallation for the changes to take effect.
+ If you experience problems due to previously installed carrier support
+ bundles, mobile configuration files, or hacks found in Cydia/Icy, reset
+ your network configuration:
+ .
+ Settings > General > Reset > Reset Network Settings.
+ .
+ DO NOT E-MAIL ME QUESTIONS ABOUT iPhone 2G PHONES!
+ READ: http://tr.im/qu4F
+Homepage: http://modmyi.com/info/.php
+Depiction: http://modmyi.com/info/.d.php
+Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>
