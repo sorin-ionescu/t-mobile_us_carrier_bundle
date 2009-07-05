@@ -8,58 +8,67 @@
 #   DESCRIPTION:  Makes T-Mobile US carrier bundles.
 #
 #        AUTHOR:  SpookyET, spookyet@gmail.com
-#       VERSION:  1.0.3
-#       CREATED:  2009-07-03 22:10:51+00:00
+#       VERSION:  1.0.4
+#       CREATED:  2009-07-05 19:37:28+00:00
 #===============================================================================
 
-CURRENT_BRANCH=`git branch | grep '^\*' |  sed -e 's/* //'`
 VERSION=`git tag | tail -n 1`
 
-IPCC_PACKAGE_VERSION=1
-IPCC_PACKAGE_NAME="spookyet.t-mobile-us"
+IPCC_PACKAGE_VERSION=2
+IPCC_PACKAGE_PREFIX="spookyet.t-mobile-us"
 
-DEB_PACKAGE_VERSION=2
-DEB_PACKAGE_NAME="com.spookyet.t-mobile-us"
+DEB_PACKAGE_VERSION=3
+DEB_PACKAGE_PREFIX="tmobileus"
 
-for branch in `git branch | sed -e 's/* //'`
+cd $( dirname $0 )
+
+for folder in ../src/*
 do
-	if [[ $branch =~ 'master' ]]
+	if [[ $folder =~ 'template' ]]
 	then
 		continue
 	fi
 	
-	git checkout $branch &> /dev/null
-	
-	if [[ $? -ne 0 ]]
-	then
-		echo "ERROR: Cannot change branch."
-		exit 1
-	fi
-
-	# IPCC
 	find . -type f -name '.DS_Store' -exec rm {} \;
-	bundle_name="t-mobile-us-${branch}.ipcc"
-	echo Making carrier bundle $bundle_name
-	rm -rf $bundle_name 
-	zip -r -y "$bundle_name" Payload/ &> /dev/null
+	bundle_name=$(echo $folder | sed -e 's/..\/src\///')
+	
+	# IPCC
+	bundle_file_name="t-mobile-us-${bundle_name}.ipcc"
+	echo Making carrier bundle $bundle_file_name
+	rm -rf $bundle_file_name Payload
+	mkdir -p Payload/TMobile_us.bundle
+	cp -L $folder/* Payload/TMobile_us.bundle/ &> /dev/null
+	ln -s TMobile_us.bundle Payload/310260
+	zip -r -y "$bundle_file_name" Payload/ &> /dev/null
+	rm -rf Payload
 
 	# DEB
-	bundle_name="$DEB_PACKAGE_NAME-$( echo $branch | sed -e 's/_/-/' )_${VERSION}-${DEB_PACKAGE_VERSION}_iphoneos-arm"
-	echo Making Cydia/Icy package $bundle_name.deb
-	mkdir $bundle_name 
-	mkdir -p ${bundle_name}/DEBIAN
-	mkdir -p ${bundle_name}/System/Library/Carrier\ Bundles/
-	cp -r debian/* ${bundle_name}/DEBIAN
-	cp -r Payload/* ${bundle_name}/System/Library/Carrier\ Bundles/
-	dpkg -b $bundle_name ${bundle_name}.deb &> /dev/null
-	rm -rf ${bundle_name}
+	bundle_name=$(echo $bundle_name | sed -e 's/_//g')
+	bundle_file_name="${DEB_PACKAGE_PREFIX}${bundle_name}${VERSION}.${DEB_PACKAGE_VERSION}"
+	echo Making Cydia/Icy package $bundle_file_name.deb
+	mkdir $bundle_file_name 
+	mkdir -p ${bundle_file_name}/DEBIAN
+	mkdir -p ${bundle_file_name}/System/Library/Carrier\ Bundles/TMobile_us.bundle
+	cp -r $folder/debian/* ${bundle_file_name}/DEBIAN
+	cp -L $folder/* ${bundle_file_name}/System/Library/Carrier\ Bundles/TMobile_us.bundle &> /dev/null
+	ln -s TMobile_us.bundle ${bundle_file_name}/System/Library/Carrier\ Bundles/310260
+	dpkg -b $bundle_file_name ${bundle_file_name}.deb &> /dev/null
 done
 
-echo Making package ${IPCC_PACKAGE_NAME}_${VERSION}-${IPCC_PACKAGE_VERSION}.ipcc.zip
-zip ${IPCC_PACKAGE_NAME}_${VERSION}-${IPCC_PACKAGE_VERSION}.ipcc.zip README.txt *.ipcc &> /dev/null
+rm -f *.zip
 
-echo Making package ${DEB_PACKAGE_NAME}_${VERSION}-${DEB_PACKAGE_VERSION}.deb.zip
-zip ${DEB_PACKAGE_NAME}_${VERSION}-${DEB_PACKAGE_VERSION}.deb.zip *.deb &> /dev/null
+ipcc_package_name=${IPCC_PACKAGE_PREFIX}_${VERSION}-${IPCC_PACKAGE_VERSION}.ipcc.zip
+echo Making package $ipcc_package_name
+zip -r $ipcc_package_name ../doc/ *.ipcc &> /dev/null
+rm -rf *.ipcc
 
-rm -f *.ipcc *.deb
-git checkout $CURRENT_BRANCH &> /dev/null
+deb_package_name=${DEB_PACKAGE_PREFIX}${VERSION}.${DEB_PACKAGE_VERSION}.deb.zip
+echo Making package $deb_package_name
+zip $deb_package_name *.deb &> /dev/null
+rm -rf *.deb
+
+deb_extracted_package_name=${deb_package_name}.deb-extracted.zip
+extracted_debs=$( find . -depth 1 -type d -name 'tmobileus*' )
+echo Making package $deb_extracted_package_name
+zip -r -y $deb_extracted_package_name $extracted_debs &> /dev/null
+rm -rf $extracted_debs

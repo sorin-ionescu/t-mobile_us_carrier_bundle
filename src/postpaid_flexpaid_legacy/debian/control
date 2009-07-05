@@ -8,6 +8,7 @@ Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
 Description: T-Mobile US carrier support for legacy postpaid and flexpaid plans.
+ It enables MMS, Internet, and tethering.
  Reboot after installation/uninstallation for the changes to take effect.
  If you experience problems due to previously installed carrier support
  bundles, mobile configuration files, or hacks found in Cydia/Icy, reset
