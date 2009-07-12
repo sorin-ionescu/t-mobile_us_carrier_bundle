@@ -30,7 +30,7 @@
 		<key>GroupModeEnabled</key>
 		<false/>
 		<key>MMSC</key>
-		<string>http://mms.msg.eng.t-mobile.com/mms/wapenc</string>
+		<string>http://216.155.174.84/servlets/mms</string>
 		<key>MaxMessageSize</key>
 		<integer>1048576</integer>
 		<key>MaxVideoBitrate</key>
