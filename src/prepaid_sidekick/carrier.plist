@@ -161,6 +161,31 @@
 			<string></string>
 		</dict>
 	</array>
+	<key>com.apple.voicemail.imap</key>
+	<dict>
+		<key>AuthenticationScheme</key>
+		<string>DIGEST-MD5</string>
+		<key>BeaconAddress</key>
+		<string></string>
+		<key>BeaconServiceCenter</key>
+		<string></string>
+		<key>ClientManagesTrash</key>
+		<false/>
+		<key>DeliverLegacyNotificationsBeforeSetup</key>
+		<true/>
+		<key>GreetingNotification</key>
+		<true/>
+		<key>MaxGreetingDuration</key>
+		<integer></integer>
+		<key>MaxPINLength</key>
+		<integer></integer>
+		<key>MinPINLength</key>
+		<integer></integer>
+		<key>UsesMWI</key>
+		<false/>
+		<key>UsesSSL</key>
+		<false/>
+	</dict>
 	<key>voicemail_context</key>
 	<integer>0</integer>
 </dict>
