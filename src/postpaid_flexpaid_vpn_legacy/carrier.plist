@@ -141,7 +141,7 @@
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>VisualVoicemailServiceName</key>
-	<string>none</string>
+	<string>IMAP</string>
 	<key>VoicemailPilotNumber</key>
 	<string>123</string>
 	<key>apns</key>
