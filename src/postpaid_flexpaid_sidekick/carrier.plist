@@ -152,7 +152,7 @@
 			<key>password</key>
 			<string>dummy</string>
 			<key>type-mask</key>
-			<integer>-6</integer>
+			<integer>9</integer>
 			<key>username</key>
 			<string>dummy</string>
 		  </dict>

@@ -152,17 +152,7 @@
 			<key>password</key>
 			<string></string>
 			<key>type-mask</key>
-			<integer>-6</integer>
-			<key>username</key>
-			<string></string>
-		  </dict>
-		<dict>
-			<key>apn</key>
-			<string>wap.voicestream.com</string>
-			<key>password</key>
-			<string></string>
-			<key>type-mask</key>
-			<integer>4</integer>
+			<integer>13</integer>
 			<key>username</key>
 			<string></string>
 		</dict>

@@ -146,7 +146,7 @@
 			<key>password</key>
 			<string></string>
 			<key>type-mask</key>
-			<integer>-2</integer>
+			<integer>13</integer>
 			<key>username</key>
 			<string></string>
 		</dict>
