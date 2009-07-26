@@ -172,9 +172,9 @@
 		<key>AuthenticationScheme</key>
 		<string>DIGEST-MD5</string>
 		<key>BeaconAddress</key>
-		<string></string>
+		<string>123</string>
 		<key>BeaconServiceCenter</key>
-		<string></string>
+		<string>+12063130004</string>
 		<key>ClientManagesTrash</key>
 		<false/>
 		<key>DeliverLegacyNotificationsBeforeSetup</key>
@@ -182,11 +182,11 @@
 		<key>GreetingNotification</key>
 		<true/>
 		<key>MaxGreetingDuration</key>
-		<integer></integer>
+		<integer>30</integer>
 		<key>MaxPINLength</key>
-		<integer></integer>
+		<integer>7</integer>
 		<key>MinPINLength</key>
-		<integer></integer>
+		<integer>4</integer>
 		<key>UsesMWI</key>
 		<false/>
 		<key>UsesSSL</key>
