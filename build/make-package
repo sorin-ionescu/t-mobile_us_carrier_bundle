@@ -14,10 +14,10 @@
 
 VERSION=`git tag | tail -n 1`
 
-IPCC_PACKAGE_VERSION=2
+IPCC_PACKAGE_VERSION=1
 IPCC_PACKAGE_PREFIX="spookyet.t-mobile-us"
 
-DEB_PACKAGE_VERSION=3
+DEB_PACKAGE_VERSION=1
 DEB_PACKAGE_PREFIX="tmobileus"
 
 cd $( dirname $0 )
