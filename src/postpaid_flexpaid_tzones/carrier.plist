@@ -141,7 +141,7 @@
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>VisualVoicemailServiceName</key>
-	<string>IMAP</string>
+	<string>none</string>
 	<key>VoicemailPilotNumber</key>
 	<string>123</string>
 	<key>apns</key>
@@ -157,31 +157,6 @@
 			<string></string>
 		</dict>
 	</array>
-	<key>com.apple.voicemail.imap</key>
-	<dict>
-		<key>AuthenticationScheme</key>
-		<string>DIGEST-MD5</string>
-		<key>BeaconAddress</key>
-		<string>123</string>
-		<key>BeaconServiceCenter</key>
-		<string>+12063130004</string>
-		<key>ClientManagesTrash</key>
-		<false/>
-		<key>DeliverLegacyNotificationsBeforeSetup</key>
-		<true/>
-		<key>GreetingNotification</key>
-		<true/>
-		<key>MaxGreetingDuration</key>
-		<integer>30</integer>
-		<key>MaxPINLength</key>
-		<integer>7</integer>
-		<key>MinPINLength</key>
-		<integer>4</integer>
-		<key>UsesMWI</key>
-		<false/>
-		<key>UsesSSL</key>
-		<false/>
-	</dict>
 	<key>voicemail_context</key>
 	<integer>0</integer>
 </dict>
