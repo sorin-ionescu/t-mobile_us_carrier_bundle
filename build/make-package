@@ -1,13 +1,13 @@
 #!/bin/bash
 #===============================================================================
 #
-#          FILE:  make-bundle
+#          FILE:  make-package
 #
-#         USAGE:  ./make-bundle
+#         USAGE:  ./make-package
 #
 #   DESCRIPTION:  Makes T-Mobile US carrier bundles.
 #
-#        AUTHOR:  SpookyET, spookyet@gmail.com
+#        AUTHOR:  Sorin Ionescu <sorin.ionescu@gmail.com>
 #       VERSION:  1.0.4
 #       CREATED:  2009-07-05 19:37:28+00:00
 #===============================================================================
