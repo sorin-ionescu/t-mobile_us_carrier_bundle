@@ -3,7 +3,7 @@ Maintainer: poetic_folly <poetic_folly@modmyi.com>
 Name: T-Mobile US - Postpaid/Flexpaid BlackBerry Corporate
 Package: com.spookyet.t-mobile-us.postpaid-flexpaid-blackberry
 Section: Tweaks
-Version: 1.0.5
+Version: 1.0.7
 Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
