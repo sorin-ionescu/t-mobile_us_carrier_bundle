@@ -59,8 +59,9 @@ rm -f *.zip
 
 ipcc_package_name=${IPCC_PACKAGE_PREFIX}_${VERSION}-${IPCC_PACKAGE_VERSION}.ipcc.zip
 echo Making package $ipcc_package_name
-zip -r $ipcc_package_name ../doc/ *.ipcc &> /dev/null
-rm -rf *.ipcc
+cp ../doc/README .
+zip -r $ipcc_package_name README *.ipcc &> /dev/null
+rm -rf README *.ipcc
 
 deb_package_name=${DEB_PACKAGE_PREFIX}${VERSION}.${DEB_PACKAGE_VERSION}.deb.zip
 echo Making package $deb_package_name
