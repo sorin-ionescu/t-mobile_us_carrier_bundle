@@ -152,7 +152,17 @@
 			<key>password</key>
 			<string></string>
 			<key>type-mask</key>
-			<integer>9</integer>
+			<integer>49</integer>
+			<key>username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>apn</key>
+			<string>epc.tmobile.com</string>
+			<key>password</key>
+			<string></string>
+			<key>type-mask</key>
+			<integer>48</integer>
 			<key>username</key>
 			<string></string>
 		</dict>

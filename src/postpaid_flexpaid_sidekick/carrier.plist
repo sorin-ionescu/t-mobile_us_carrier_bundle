@@ -152,10 +152,20 @@
 			<key>password</key>
 			<string>dummy</string>
 			<key>type-mask</key>
-			<integer>9</integer>
+			<integer>49</integer>
 			<key>username</key>
 			<string>dummy</string>
-		  </dict>
+		</dict>
+		<dict>
+			<key>apn</key>
+			<string>hiptop.t-mobile.com</string>
+			<key>password</key>
+			<string>dummy</string>
+			<key>type-mask</key>
+			<integer>48</integer>
+			<key>username</key>
+			<string>dummy</string>
+		</dict>
 		<dict>
 			<key>apn</key>
 			<string>wap.voicestream.com</string>

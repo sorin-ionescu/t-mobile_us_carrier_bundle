@@ -152,10 +152,20 @@
 			<key>password</key>
 			<string></string>
 			<key>type-mask</key>
-			<integer>9</integer>
+			<integer>49</integer>
 			<key>username</key>
 			<string></string>
-		  </dict>
+		</dict>
+		<dict>
+			<key>apn</key>
+			<string>internet3.voicestream.com</string>
+			<key>password</key>
+			<string></string>
+			<key>type-mask</key>
+			<integer>48</integer>
+			<key>username</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>apn</key>
 			<string>wap.voicestream.com</string>

@@ -146,7 +146,27 @@
 			<key>password</key>
 			<string></string>
 			<key>type-mask</key>
-			<integer>13</integer>
+			<integer>49</integer>
+			<key>username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>apn</key>
+			<string>wap.voicestream.com</string>
+			<key>password</key>
+			<string></string>
+			<key>type-mask</key>
+			<integer>48</integer>
+			<key>username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>apn</key>
+			<string>wap.voicestream.com</string>
+			<key>password</key>
+			<string></string>
+			<key>type-mask</key>
+			<integer>4</integer>
 			<key>username</key>
 			<string></string>
 		</dict>
