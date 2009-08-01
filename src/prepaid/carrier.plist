@@ -23,8 +23,6 @@
 	</array>
 	<key>IntlDataRoamingSwitch</key>
 	<true/>
-	<key>IsMMSUserEditable</key>
-	<true/>
 	<key>MMS</key>
 	<dict>
 		<key>GroupModeEnabled</key>
