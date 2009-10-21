@@ -8,8 +8,8 @@
 #   DESCRIPTION:  Makes T-Mobile US carrier bundles.
 #
 #        AUTHOR:  Sorin Ionescu <sorin.ionescu@gmail.com>
-#       VERSION:  1.0.4
-#       CREATED:  2009-07-05 19:37:28+00:00
+#       VERSION:  1.0.5
+#       CREATED:  2009-10-21 14:07:18-04:00
 #===============================================================================
 
 VERSION=`git tag | tail -n 1`
@@ -38,6 +38,7 @@ do
 	rm -rf $bundle_file_name Payload
 	mkdir -p Payload/TMobile_us.bundle
 	cp -L $folder/* Payload/TMobile_us.bundle/ &> /dev/null
+	find Payload/TMobile_us.bundle/ -type f -name "*.plist" -exec plutil -convert binary1 {} \;
 	ln -s TMobile_us.bundle Payload/310260
 	zip -r -y "$bundle_file_name" Payload/ &> /dev/null
 	rm -rf Payload
@@ -51,6 +52,7 @@ do
 	mkdir -p ${bundle_file_name}/System/Library/Carrier\ Bundles/TMobile_us.bundle
 	cp -r $folder/debian/* ${bundle_file_name}/DEBIAN
 	cp -L $folder/* ${bundle_file_name}/System/Library/Carrier\ Bundles/TMobile_us.bundle &> /dev/null
+	find ${bundle_file_name}/System/Library/Carrier\ Bundles/TMobile_us.bundle -type f -name "*.plist" -exec plutil -convert binary1 {} \;
 	ln -s TMobile_us.bundle ${bundle_file_name}/System/Library/Carrier\ Bundles/310260
 	dpkg -b $bundle_file_name ${bundle_file_name}.deb &> /dev/null
 done

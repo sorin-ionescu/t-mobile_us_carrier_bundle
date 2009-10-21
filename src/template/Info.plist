@@ -23,8 +23,8 @@
 	<key>DTPlatformName</key>
 	<string>iphoneos</string>
 	<key>DTSDKName</key>
-	<string>iphoneos3.0.internal</string>
+	<string>iphoneos3.1.2.internal</string>
 	<key>MinimumOSVersion</key>
-	<string>3.0</string>
+	<string>3.1.2</string>
 </dict>
 </plist>
