@@ -22,6 +22,9 @@
 		<string>310110</string>
 		<string>310140</string>
 		<string>310470</string>
+		<string>310730</string>
+		<string>311170</string>
+		<string>310400</string>
 	</array>
 	<key>IntlDataRoamingSwitch</key>
 	<true/>
@@ -109,24 +112,7 @@
 	</array>
 	<key>SupportedSIMs</key>
 	<array>
-		<string>310160</string>
-		<string>310170</string>
-		<string>310200</string>
-		<string>310210</string>
-		<string>310220</string>
-		<string>310230</string>
-		<string>310240</string>
-		<string>310250</string>
 		<string>310260</string>
-		<string>310270</string>
-		<string>310280</string>
-		<string>310290</string>
-		<string>310300</string>
-		<string>310310</string>
-		<string>310330</string>
-		<string>310580</string>
-		<string>310660</string>
-		<string>310800</string>
 	</array>
 	<key>SupportsNITZ</key>
 	<true/>
