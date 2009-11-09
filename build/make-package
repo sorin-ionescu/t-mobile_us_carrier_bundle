@@ -8,11 +8,11 @@
 #   DESCRIPTION:  Makes T-Mobile US carrier bundles.
 #
 #        AUTHOR:  Sorin Ionescu <sorin.ionescu@gmail.com>
-#       VERSION:  1.0.5
-#       CREATED:  2009-10-21 14:07:18-04:00
+#       VERSION:  1.0.6
+#       CREATED:  2009-11-09 16:08:10-05:00
 #===============================================================================
 
-VERSION=`git tag | tail -n 1`
+VERSION=`git tag | sort -V | tail -n 1`
 
 IPCC_PACKAGE_VERSION=1
 IPCC_PACKAGE_PREFIX="spookyet.t-mobile-us"
