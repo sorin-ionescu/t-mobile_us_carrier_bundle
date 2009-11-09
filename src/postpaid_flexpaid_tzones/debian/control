@@ -3,11 +3,11 @@ Maintainer: poetic_folly <poetic_folly@modmyi.com>
 Name: T-Mobile US - Postpaid/Flexpaid t-zones
 Package: com.spookyet.t-mobile-us.postpaid-flexpaid-tzones
 Section: Tweaks
-Version: 1.0.9
+Version: 1.0.10
 Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
-Depends: firmware (>= 3.1.2)
+Depends: firmware (>= 3.0)
 Description: T-Mobile US carrier support for old postpaid and flexpaid t-zones plans.
  It enables MMS, Internet, tethering.
  Reboot after installation/uninstallation for the changes to take effect.
