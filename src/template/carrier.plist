@@ -36,10 +36,10 @@
 		<string>http://mms.msg.eng.t-mobile.com/mms/wapenc</string>
 		<key>MaxMessageSize</key>
 		<integer>1048576</integer>
-		<key>MaxVideoBitrate</key>
-		<integer>131072</integer>
 		<key>MaxRecipients</key>
 		<integer>10</integer>
+		<key>MaxVideoBitrate</key>
+		<integer>131072</integer>
 		<key>Proxy</key>
 		<string>216.155.165.50:8080</string>
 		<key>UAProf</key>
@@ -113,8 +113,7 @@
 	<key>VoicemailPilotNumber</key>
 	<string>123</string>
 	<key>apns</key>
-	<array>
-	</array>
+	<array/>
 	<key>voicemail_context</key>
 	<integer>0</integer>
 </dict>

@@ -36,10 +36,10 @@
 		<string>216.155.174.84/servlets/mms</string>
 		<key>MaxMessageSize</key>
 		<integer>1048576</integer>
-		<key>MaxVideoBitrate</key>
-		<integer>131072</integer>
 		<key>MaxRecipients</key>
 		<integer>10</integer>
+		<key>MaxVideoBitrate</key>
+		<integer>131072</integer>
 		<key>Proxy</key>
 		<string>216.155.165.50:8080</string>
 		<key>UAProf</key>
@@ -148,7 +148,7 @@
 			<key>password</key>
 			<string></string>
 			<key>type-mask</key>
-			<integer>48</integer>
+			<integer>4</integer>
 			<key>username</key>
 			<string></string>
 		</dict>
@@ -158,7 +158,7 @@
 			<key>password</key>
 			<string></string>
 			<key>type-mask</key>
-			<integer>4</integer>
+			<integer>48</integer>
 			<key>username</key>
 			<string></string>
 		</dict>

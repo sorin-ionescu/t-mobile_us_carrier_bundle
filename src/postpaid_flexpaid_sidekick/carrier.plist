@@ -36,10 +36,10 @@
 		<string>http://mms.msg.eng.t-mobile.com/mms/wapenc</string>
 		<key>MaxMessageSize</key>
 		<integer>1048576</integer>
-		<key>MaxVideoBitrate</key>
-		<integer>131072</integer>
 		<key>MaxRecipients</key>
 		<integer>10</integer>
+		<key>MaxVideoBitrate</key>
+		<integer>131072</integer>
 		<key>Proxy</key>
 		<string>216.155.165.50:8080</string>
 		<key>UAProf</key>
@@ -144,16 +144,6 @@
 		</dict>
 		<dict>
 			<key>apn</key>
-			<string>hiptop.t-mobile.com</string>
-			<key>password</key>
-			<string>dummy</string>
-			<key>type-mask</key>
-			<integer>48</integer>
-			<key>username</key>
-			<string>dummy</string>
-		</dict>
-		<dict>
-			<key>apn</key>
 			<string>wap.voicestream.com</string>
 			<key>password</key>
 			<string></string>
@@ -161,6 +151,16 @@
 			<integer>4</integer>
 			<key>username</key>
 			<string></string>
+		</dict>
+		<dict>
+			<key>apn</key>
+			<string>hiptop.t-mobile.com</string>
+			<key>password</key>
+			<string>dummy</string>
+			<key>type-mask</key>
+			<integer>48</integer>
+			<key>username</key>
+			<string>dummy</string>
 		</dict>
 	</array>
 	<key>voicemail_context</key>
