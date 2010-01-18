@@ -52,7 +52,7 @@
 	<key>MyAccountURL</key>
 	<string>http://my.t-mobile.com</string>
 	<key>MyAccountURLTitle</key>
-	<string>T-Mobile</string>
+	<string>My T-Mobile</string>
 	<key>Services</key>
 	<array>
 		<dict>
