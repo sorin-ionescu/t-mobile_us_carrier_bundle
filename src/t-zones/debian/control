@@ -11,8 +11,8 @@ Depends: firmware (>= 4.0)
 Description: T-Mobile US carrier support for old t-zones plans.
  MUST READ: http://j.mp/tmous
  PLEASE DONATE: http://j.mp/tmousd
- It enables MMS, Internet, tethering.
- Reboot after installation/uninstallation for the changes to take effect.
+ It contains carrier settings for MMS, Internet, and tethering.
+ Reboot after installation/uninstallation for changes to take effect.
  If you experience problems due to previously installed carrier support
  bundles, mobile configuration files, or hacks found in Cydia, reset
  your network configuration:
