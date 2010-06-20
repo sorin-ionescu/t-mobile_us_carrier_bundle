@@ -96,9 +96,9 @@
 			<key>CarrierName</key>
 			<string>T - Mobile</string>
 			<key>DefaultImage</key>
-			<string>Default_CARRIER_TMOBILE.png</string>
+			<string>Default_CARRIER_T-Mobile US.png</string>
 			<key>FullScreenOpaqueImage</key>
-			<string>FSO_CARRIER_TMOBILE.png</string>
+			<string>FSO_CARRIER_T-Mobile US.png</string>
 		</dict>
 	</array>
 	<key>StockSymboli</key>
