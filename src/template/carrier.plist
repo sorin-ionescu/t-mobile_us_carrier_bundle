@@ -59,6 +59,8 @@
 			<string>Default_CARRIER_T-Mobile US.png</string>
 			<key>FullScreenOpaqueImage</key>
 			<string>FSO_CARRIER_T-Mobile US.png</string>
+			<key>StatusBarCarrierName</key>
+			<string>T-Mobile</string>
 		</dict>
 	</array>
 	<key>StockSymboli</key>

@@ -2,32 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowEDGEEditing</key>
-	<true/>
-	<key>BookmarkURLs</key>
-	<array>
-		<dict>
-			<key>BookmarkName</key>
-			<string>My T-Mobile</string>
-			<key>BookmarkURL</key>
-			<string>http://my.t-mobile.com</string>
-		</dict>
-	</array>
 	<key>CarrierName</key>
 	<string>T-Mobile</string>
-	<key>CustomerServicePhoneNumber</key>
-	<string>611</string>
-	<key>IntlDataRoamingExceptions</key>
-	<array>
-		<string>310110</string>
-		<string>310140</string>
-		<string>310470</string>
-		<string>310730</string>
-		<string>311170</string>
-		<string>310400</string>
-	</array>
-	<key>IntlDataRoamingSwitch</key>
-	<true/>
 	<key>MMS</key>
 	<dict>
 		<key>GroupModeEnabled</key>
@@ -42,17 +18,15 @@
 		<integer>131072</integer>
 		<key>Proxy</key>
 		<string>216.155.165.50:8080</string>
-		<key>UAProf</key>
-		<string>http://www.apple.com/mms/uaprof.rdf</string>
-		<key>UserAgent</key>
-		<string>SonyEricssonW800i/R1L</string>
-		<key>Version</key>
-		<string>1.2</string>
 	</dict>
+	<key>MaxBluetoothModemConnections</key>
+	<integer>1</integer>
 	<key>MyAccountURL</key>
 	<string>http://my.t-mobile.com</string>
 	<key>MyAccountURLTitle</key>
 	<string>My T-Mobile</string>
+	<key>PhoneNumberRegistrationGatewayAddress</key>
+	<string>+447786205094</string>
 	<key>Services</key>
 	<array>
 		<dict>
@@ -90,21 +64,21 @@
 	<false/>
 	<key>ShowCallForwarding</key>
 	<false/>
-	<key>ShowDialAssist</key>
-	<true/>
 	<key>ShowTTY</key>
-	<true/>
+	<false/>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
 			<key>AllowPrefixMatching</key>
-			<false/>
+			<true/>
 			<key>CarrierName</key>
 			<string>T - Mobile</string>
 			<key>DefaultImage</key>
 			<string>Default_CARRIER_T-Mobile US.png</string>
 			<key>FullScreenOpaqueImage</key>
 			<string>FSO_CARRIER_T-Mobile US.png</string>
+			<key>StatusBarCarrierName</key>
+			<string>T-Mobile</string>
 		</dict>
 	</array>
 	<key>StockSymboli</key>
@@ -122,8 +96,6 @@
 	</array>
 	<key>SupportsNITZ</key>
 	<true/>
-	<key>SupportsUserBusyCauseCode</key>
-	<false/>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>VisualVoicemailServiceName</key>
@@ -163,7 +135,5 @@
 			<string>dummy</string>
 		</dict>
 	</array>
-	<key>voicemail_context</key>
-	<integer>0</integer>
 </dict>
 </plist>
