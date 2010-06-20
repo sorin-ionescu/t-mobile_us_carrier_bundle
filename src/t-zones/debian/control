@@ -8,7 +8,7 @@ Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
 Depends: firmware (>= 4.0)
-Description: T-Mobile US carrier support for old t-zones plans.
+Description: T-Mobile US carrier support for t-zones plans.
  MUST READ: http://j.mp/tmous
  PLEASE DONATE: http://j.mp/tmousd
  It contains carrier settings for MMS, Internet, and tethering.
