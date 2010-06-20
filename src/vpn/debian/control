@@ -1,22 +1,22 @@
 Author: Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
 Maintainer: poetic_folly <poetic_folly@modmyi.com>
-Name: T-Mobile US - Postpaid/Flexpaid
-Package: com.spookyet.t-mobile-us.postpaid-flexpaid
+Name: T-Mobile US - VPN
+Package: com.spookyet.t-mobile-us.vpn
 Section: Tweaks
-Version: 1.0.11
+Version: 1.0.12
 Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
-Depends: firmware (>= 3.0)
-Description: T-Mobile US carrier support for postpaid and flexpaid plans.
+Depends: firmware (>= 4.0)
+Description: T-Mobile US carrier support for VPN plans.
  It enables MMS, Internet, tethering.
  Reboot after installation/uninstallation for the changes to take effect.
  If you experience problems due to previously installed carrier support
- bundles, mobile configuration files, or hacks found in Cydia/Icy, reset
+ bundles, mobile configuration files, or hacks found in Cydia, reset
  your network configuration:
  	Settings > General > Reset > Reset Network Settings.
  READ: http://tr.im/qu4F
  DONATE: http://tr.im/s1XM
-Homepage: http://modmyi.com/info/postpaid-flexpaid.php
-Depiction: http://modmyi.com/info/postpaid-flexpaid.d.php
+Homepage: http://modmyi.com/info/vpn.php
+Depiction: http://modmyi.com/info/vpn.d.php
 Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>
