@@ -9,14 +9,14 @@ Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
 Depends: firmware (>= 4.0)
 Description: T-Mobile US carrier support for old t-zones plans.
+ MUST READ: http://j.mp/tmous
+ PLEASE DONATE: http://j.mp/tmousd
  It enables MMS, Internet, tethering.
  Reboot after installation/uninstallation for the changes to take effect.
  If you experience problems due to previously installed carrier support
  bundles, mobile configuration files, or hacks found in Cydia, reset
  your network configuration:
  	Settings > General > Reset > Reset Network Settings.
- READ: http://j.mp/tmous
- DONATE: http://j.mp/tmousd
 Homepage: http://modmyi.com/info/t-zones.php
 Depiction: http://modmyi.com/info/t-zones.d.php
 Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>
