@@ -27,8 +27,6 @@
 		<integer>131072</integer>
 		<key>Proxy</key>
 		<string>216.155.165.50:8080</string>
-		<key>UAProf</key>
-		<string>http://www.apple.com/mms/uaprof.rdf</string>
 		<key>UserAgent</key>
 		<string>SonyEricssonW800i/R1L</string>
 		<key>Version</key>
