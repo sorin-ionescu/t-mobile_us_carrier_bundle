@@ -9,8 +9,8 @@ Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
 Depends: firmware (>= 3.0)
 Description: T-Mobile US carrier support for <package name>.
- MUST READ: http://j.mp/tmous
- PLEASE DONATE: http://j.mp/tmousd
+ MUST READ: http://j.mp/TmoUSA
+ PLEASE DONATE: http://j.mp/TmoUSAd
  It contains carrier settings for MMS, Internet, and tethering.
  Reboot after installation/uninstallation for changes to take effect.
  If you experience problems due to previously installed carrier support
