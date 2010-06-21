@@ -12,7 +12,7 @@
 #       CREATED:  2010-06-20 21:36:14-04:00
 #===============================================================================
 
-VERSION=`git tag | sort -n -k3 -t. | tail -n 1`
+VERSION=`git tag | grep "^1\.0" | sort -n -k3 -t. | tail -n 1`
 
 IPCC_PACKAGE_VERSION=1
 IPCC_PACKAGE_PREFIX="t-mobile_us"
