@@ -8,14 +8,14 @@
 #   DESCRIPTION:  Makes T-Mobile US carrier bundles.
 #
 #        AUTHOR:  Sorin Ionescu <sorin.ionescu@gmail.com>
-#       VERSION:  1.0.6
-#       CREATED:  2009-11-09 16:08:10-05:00
+#       VERSION:  1.0.7
+#       CREATED:  2010-06-20 21:36:14-04:00
 #===============================================================================
 
-VERSION=`git tag | sort -V | tail -n 1`
+VERSION=`git tag | sort -n -k3 -t. | tail -n 1`
 
 IPCC_PACKAGE_VERSION=1
-IPCC_PACKAGE_PREFIX="spookyet.t-mobile-us"
+IPCC_PACKAGE_PREFIX="t-mobile_us"
 
 DEB_PACKAGE_VERSION=1
 DEB_PACKAGE_PREFIX="tmobileus"
@@ -33,7 +33,7 @@ do
 	bundle_name=$(echo $folder | sed -e 's/..\/src\///')
 	
 	# IPCC
-	bundle_file_name="t-mobile-us-${bundle_name}.ipcc"
+	bundle_file_name="t-mobile_us_${bundle_name}.ipcc"
 	echo Making carrier bundle $bundle_file_name
 	rm -rf $bundle_file_name Payload
 	mkdir -p Payload/TMobile_us.bundle
@@ -46,7 +46,7 @@ do
 	# DEB
 	bundle_name=$(echo $bundle_name | sed -e 's/_//g')
 	bundle_file_name="${DEB_PACKAGE_PREFIX}${bundle_name}${VERSION}.${DEB_PACKAGE_VERSION}"
-	echo Making Cydia/Icy package $bundle_file_name.deb
+	echo Making Cydia package $bundle_file_name.deb
 	mkdir $bundle_file_name 
 	mkdir -p ${bundle_file_name}/DEBIAN
 	mkdir -p ${bundle_file_name}/System/Library/Carrier\ Bundles/TMobile_us.bundle
@@ -59,7 +59,7 @@ done
 
 rm -f *.zip
 
-ipcc_package_name=${IPCC_PACKAGE_PREFIX}_${VERSION}-${IPCC_PACKAGE_VERSION}.ipcc.zip
+ipcc_package_name=${IPCC_PACKAGE_PREFIX}_${VERSION}.ipcc.zip
 echo Making package $ipcc_package_name
 cp ../doc/README .
 zip -r $ipcc_package_name README *.ipcc &> /dev/null
