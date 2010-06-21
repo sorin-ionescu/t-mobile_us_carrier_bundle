@@ -1,22 +1,22 @@
 Author: Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
 Maintainer: poetic_folly <poetic_folly@modmyi.com>
-Name: T-Mobile US - Postpaid/Flexpaid Legacy
-Package: com.spookyet.t-mobile-us.postpaid-flexpaid-legacy
+Name: T-Mobile US - Legacy
+Package: com.spookyet.t-mobile-us.legacy
 Section: Tweaks
-Version: 1.0.11
+Version: 1.0.12
 Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
 Depends: firmware (>= 3.0)
-Description: T-Mobile US carrier support for legacy postpaid and flexpaid plans.
- It enables MMS, Internet, tethering.
- Reboot after installation/uninstallation for the changes to take effect.
+Description: T-Mobile US carrier support for legacy plans.
+ MUST READ: http://j.mp/tmous
+ PLEASE DONATE: http://j.mp/tmousd
+ It contains carrier settings for MMS, Internet, and tethering.
+ Reboot after installation/uninstallation for changes to take effect.
  If you experience problems due to previously installed carrier support
- bundles, mobile configuration files, or hacks found in Cydia/Icy, reset
+ bundles, mobile configuration files, or hacks found in Cydia, reset
  your network configuration:
  	Settings > General > Reset > Reset Network Settings.
- READ: http://tr.im/qu4F
- DONATE: http://tr.im/s1XM
-Homepage: http://modmyi.com/info/postpaid-flexpaid-legacy.php
-Depiction: http://modmyi.com/info/postpaid-flexpaid-legacy.d.php
+Homepage: http://modmyi.com/info/legacy.php
+Depiction: http://modmyi.com/info/legacy.d.php
 Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>

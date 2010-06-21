@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowEDGEEditing</key>
-	<true/>
 	<key>BookmarkURLs</key>
 	<array>
 		<dict>
@@ -15,19 +13,6 @@
 	</array>
 	<key>CarrierName</key>
 	<string>T-Mobile</string>
-	<key>CustomerServicePhoneNumber</key>
-	<string>611</string>
-	<key>IntlDataRoamingExceptions</key>
-	<array>
-		<string>310110</string>
-		<string>310140</string>
-		<string>310470</string>
-		<string>310730</string>
-		<string>311170</string>
-		<string>310400</string>
-	</array>
-	<key>IntlDataRoamingSwitch</key>
-	<true/>
 	<key>MMS</key>
 	<dict>
 		<key>GroupModeEnabled</key>
@@ -84,15 +69,13 @@
 	<false/>
 	<key>ShowCallForwarding</key>
 	<false/>
-	<key>ShowDialAssist</key>
-	<true/>
 	<key>ShowTTY</key>
-	<true/>
+	<false/>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
 			<key>AllowPrefixMatching</key>
-			<false/>
+			<true/>
 			<key>CarrierName</key>
 			<string>T - Mobile</string>
 			<key>DefaultImage</key>
@@ -116,8 +99,6 @@
 	</array>
 	<key>SupportsNITZ</key>
 	<true/>
-	<key>SupportsUserBusyCauseCode</key>
-	<false/>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>VisualVoicemailServiceName</key>

@@ -1,22 +1,22 @@
 Author: Sorin Ionescu (SpookyET) <sorin.ionescu@gmail.com>
 Maintainer: poetic_folly <poetic_folly@modmyi.com>
-Name: T-Mobile US - Postpaid/Flexpaid Sidekick
-Package: com.spookyet.t-mobile-us.postpaid-flexpaid-sidekick
+Name: T-Mobile US - Sidekick
+Package: com.spookyet.t-mobile-us.sidekick
 Section: Tweaks
-Version: 1.0.11
+Version: 1.0.12
 Architecture: iphoneos-arm
 Provides: com.spookyet.t-mobile-us
 Conflicts: com.spookyet.t-mobile-us
 Depends: firmware (>= 3.0)
-Description: T-Mobile US carrier support for postpaid and flexpaid Sidekick plans.
- It enables MMS, Internet, tethering.
- Reboot after installation/uninstallation for the changes to take effect.
+Description: T-Mobile US carrier support for Sidekick plans.
+ MUST READ: http://j.mp/tmous
+ PLEASE DONATE: http://j.mp/tmousd
+ It contains carrier settings for MMS, Internet, and tethering.
+ Reboot after installation/uninstallation for changes to take effect.
  If you experience problems due to previously installed carrier support
- bundles, mobile configuration files, or hacks found in Cydia/Icy, reset
+ bundles, mobile configuration files, or hacks found in Cydia, reset
  your network configuration:
  	Settings > General > Reset > Reset Network Settings.
- READ: http://tr.im/qu4F
- DONATE: http://tr.im/s1XM
-Homepage: http://modmyi.com/info/postpaid-flexpaid-sidekick.php
-Depiction: http://modmyi.com/info/postpaid-flexpaid-sidekick.d.php
+Homepage: http://modmyi.com/info/sidekick.php
+Depiction: http://modmyi.com/info/sidekick.d.php
 Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>
