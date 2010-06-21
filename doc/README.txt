@@ -7,6 +7,12 @@ ironicirony (SonyEricsson User-Agent faking)
 © 2009-2010 Copyright by Sorin Ionescu. All Rights Reserved.
 
 --------------------------------------------------------------
+Attention Required
+--------------------------------------------------------------
+Full Guide: http://j.mp/tmous
+Please Donate: http://j.mp/tmousd
+
+--------------------------------------------------------------
 How to Enable Carrier Bundle Support in iTunes 8.2 in Mac
 --------------------------------------------------------------
 Step 1: Quit iTunes.
