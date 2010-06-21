@@ -18,6 +18,10 @@
 		<integer>131072</integer>
 		<key>Proxy</key>
 		<string>216.155.165.50:8080</string>
+		<key>UserAgent</key>
+		<string>SonyEricssonW800i/R1L</string>
+		<key>Version</key>
+		<string>1.2</string>
 	</dict>
 	<key>MaxBluetoothModemConnections</key>
 	<integer>1</integer>
