@@ -8,14 +8,14 @@
 #   DESCRIPTION:  Makes T-Mobile US carrier bundles.
 #
 #        AUTHOR:  Sorin Ionescu <sorin.ionescu@gmail.com>
-#       VERSION:  1.0.7
-#       CREATED:  2010-06-20 21:36:14-04:00
+#       VERSION:  1.0.8
+#       CREATED:  2010-06-22 03:34:55-04:00
 #===============================================================================
 
 VERSION=`git tag | grep "^1\.0" | sort -n -k3 -t. | tail -n 1`
 
 IPCC_PACKAGE_VERSION=1
-IPCC_PACKAGE_PREFIX="t-mobile_us"
+IPCC_PACKAGE_PREFIX="t-mobile_us_ios3"
 
 DEB_PACKAGE_VERSION=1
 DEB_PACKAGE_PREFIX="tmobileus"
