@@ -113,6 +113,13 @@
 			<string>epc.tmobile.com</string>
 			<key>password</key>
 			<string></string>
+			<key>signature</key>
+			<data>
+			sOrIN/qkfE999J8uKMWCFiN7Ubq75qxrUfuW7gyLH1vUQGKZFPku
+			m4e79Xg04itm16BAF/RFTg9nrC8MbRchd7S0UM9vHLQ7XANRQDvZ
+			Nf1bVflIKOqvrgEuuDxfnoJKDaXYGGPNlJVnfkMmzht7w5VZEo9Q
+			W17PuOzALdmr5Fs=
+			</data>
 			<key>type-mask</key>
 			<integer>49</integer>
 			<key>username</key>
@@ -123,6 +130,13 @@
 			<string>wap.voicestream.com</string>
 			<key>password</key>
 			<string></string>
+			<key>signature</key>
+			<data>
+			s0RiNUX1X9E71WG+qydCeP8p/ftVoUSLjZGPcDQShc1WmgCpMjEl
+			WNGjdPZG7XZg6jcc/SSprvvGonQN/128vZfrn/imWgUsUf9qJLgr
+			Dj1SVgkMnJmqeLbA3APL6v6JLVWnEBofVaumetXP1Yb5p4xmJY8Z
+			iv/cRz+LfAiiqh8=
+			</data>
 			<key>type-mask</key>
 			<integer>4</integer>
 			<key>username</key>
@@ -133,11 +147,24 @@
 			<string>epc.tmobile.com</string>
 			<key>password</key>
 			<string></string>
+			<key>signature</key>
+			<data>
+			S0rIN0mr/aCHPuSH52l+g/bq+GhMRWgCX8rmBUTM2GZeY+Cx2Te4
+			nMupi3Qux/ohzXFwkaorqM1IEYx7Fwos8X/OIS9wI4fCWPyvAsqy
+			R2RYwFLtuarrnjWQGHxhWczwDk9v4svKtY7Giw88l6L4noB9LmmD
+			C2QKouilPAa/9Vg=
+			</data>
 			<key>type-mask</key>
 			<integer>48</integer>
 			<key>username</key>
 			<string></string>
 		</dict>
 	</array>
+	<key>signature</key>
+	<data>
+		SoRInAo/HFp8UZFxEcFm5gbgh7y9tIJNWAGiVcgneAmMCx4km5qs0Nn3bDHw5/sUXMuw
+		OQSoQZT2ZxMdfoZdIhL+2HAvJCzfIm9QUlBxQmCjTS+yn+E9NCm4eAqhh/ukXs7bUTla
+		woOEdWCMSMpfM7E5ToaioPQ3mkBDt2hlwVA=
+	</data>
 </dict>
 </plist>

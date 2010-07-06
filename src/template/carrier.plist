@@ -90,5 +90,11 @@
 	<string>123</string>
 	<key>apns</key>
 	<array/>
+	<key>signature</key>
+	<data>
+		SoRInAo/HFp8UZFxEcFm5gbgh7y9tIJNWAGiVcgneAmMCx4km5qs0Nn3bDHw5/sUXMuw
+		OQSoQZT2ZxMdfoZdIhL+2HAvJCzfIm9QUlBxQmCjTS+yn+E9NCm4eAqhh/ukXs7bUTla
+		woOEdWCMSMpfM7E5ToaioPQ3mkBDt2hlwVA=
+	</data>
 </dict>
 </plist>
