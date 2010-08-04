@@ -13,7 +13,7 @@ Full Guide: http://j.mp/TmoUSA
 Please Donate: http://j.mp/TmoUSAd
 
 --------------------------------------------------------------
-How to Enable Carrier Bundle Support in iTunes 8.2 in Mac
+How to Enable Carrier Bundle Support in iTunes for Mac OS X
 --------------------------------------------------------------
 Step 1: Quit iTunes.
 Step 2: Launch Terminal.app found in /Applications/Utilities folder.
@@ -26,7 +26,7 @@ Step 5: Select the iPhone from the list of devices on the left then hold down th
 Step 6: Select the proper .ipcc file.
 
 --------------------------------------------------------------
-How to Enable Carrier Bundle Support in iTunes 8.2 in Windows
+How to Enable Carrier Bundle Support in iTunes for Windows
 --------------------------------------------------------------
 Step 1: Quit iTunes.
 Step 2: Press Windows Key + R to open the Run dialog.
