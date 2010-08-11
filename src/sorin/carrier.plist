@@ -103,6 +103,69 @@
 	<string>none</string>
 	<key>VoicemailPilotNumber</key>
 	<string>123</string>
+	<key>WiFiHotspots</key>
+	<dict>
+		<key>ATTMETROWIFI</key>
+		<dict>
+			<key>AuthMethod</key>
+			<string>WISPr</string>
+			<key>AuthenticationRealm</key>
+			<string>attmobilityiphone.com</string>
+			<key>Password</key>
+			<string>%attmd5%</string>
+			<key>SharedSecret</key>
+			<string>a446649326d41d87dbb8caec8caf736a</string>
+			<key>TrustedDomains</key>
+			<array>
+				<string>.wayport.net</string>
+				<string>.att.net</string>
+				<string>.att.com</string>
+				<string>.sbc.com</string>
+			</array>
+			<key>UserName</key>
+			<string>%phonenumber%</string>
+		</dict>
+		<key>Wayport_Access</key>
+		<dict>
+			<key>AuthMethod</key>
+			<string>WISPr</string>
+			<key>AuthenticationRealm</key>
+			<string>attmobilityiphone.com</string>
+			<key>Password</key>
+			<string>%attmd5%</string>
+			<key>SharedSecret</key>
+			<string>a446649326d41d87dbb8caec8caf736a</string>
+			<key>TrustedDomains</key>
+			<array>
+				<string>.wayport.net</string>
+				<string>.att.net</string>
+				<string>.att.com</string>
+				<string>.sbc.com</string>
+			</array>
+			<key>UserName</key>
+			<string>%phonenumber%</string>
+		</dict>
+		<key>attwifi</key>
+		<dict>
+			<key>AuthMethod</key>
+			<string>WISPr</string>
+			<key>AuthenticationRealm</key>
+			<string>attmobilityiphone.com</string>
+			<key>Password</key>
+			<string>%attmd5%</string>
+			<key>SharedSecret</key>
+			<string>a446649326d41d87dbb8caec8caf736a</string>
+			<key>TrustedDomains</key>
+			<array>
+				<string>.wayport.net</string>
+				<string>.att.net</string>
+				<string>.att.com</string>
+				<string>.sbc.com</string>
+			</array>
+			<key>UserName</key>
+			<string>%phonenumber%</string>
+		</dict>
+	</dict>
 	<key>apns</key>
 	<array>
 		<dict>
