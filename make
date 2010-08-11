@@ -1,9 +1,9 @@
 #!/bin/bash
 #===============================================================================
 #
-#          FILE:  make-package
+#          FILE:  make
 #
-#         USAGE:  ./make-package
+#         USAGE:  ./make
 #
 #   DESCRIPTION:  Makes T-Mobile US carrier bundles.
 #
@@ -12,7 +12,7 @@
 #       CREATED:  2010-08-04 18:58:43-04:00
 #===============================================================================
 
-VERSION=`git tag | sort -n -k2 -t. | tail -n 1`
+VERSION=`git tag | sort -n -k3 -t. | tail -n 1`
 
 IPCC_PACKAGE_VERSION=1
 IPCC_PACKAGE_PREFIX="t-mobile_us_ios3"
