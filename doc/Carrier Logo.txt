@@ -1,0 +1,3 @@
+Helvetica 14 Bold
+1. White on Black logo - font color = #F0F0F0, BG color = #000
+2. Black on White logo - font color = #3F3F3F, BG color = #DAE1E5 (this is average color from 11 pixels height box with background sector under operator logo)

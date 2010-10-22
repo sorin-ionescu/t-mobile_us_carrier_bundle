@@ -32,6 +32,8 @@ Step 1: Quit iTunes.
 Step 2: Press Windows Key + R to open the Run dialog.
 
     "C:\Program Files\iTunes\iTunes.exe" /setPrefInt carrier-testing 1
+                                     OR
+    "C:\Program Files (x86)\iTunes\iTunes.exe" /setPrefInt carrier-testing 1
 
 Step 3: Connect the iPhone and click to launch iTunes from your Start Menu.
 Step 4: Select the iPhone from the list of devices on the left then hold down the Shift key and click the "Check for Update" button.

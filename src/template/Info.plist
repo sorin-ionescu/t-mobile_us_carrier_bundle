@@ -19,19 +19,19 @@
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>7.0</string>
+	<string>8.0</string>
 	<key>DTCompiler</key>
 	<string>4.2</string>
 	<key>DTPlatformName</key>
 	<string>iphoneos</string>
 	<key>DTPlatformVersion</key>
-	<string>4.0 GM</string>
+	<string>4.1 Seed 3</string>
 	<key>DTSDKName</key>
-	<string>iphoneos4.0.internal</string>
+	<string>iphoneos4.1.internal</string>
 	<key>DTXcode</key>
-	<string>0323</string>
+	<string>0324</string>
 	<key>MinimumOSVersion</key>
-	<string>4.0</string>
+	<string>4.1</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
