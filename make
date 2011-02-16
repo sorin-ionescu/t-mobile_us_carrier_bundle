@@ -51,7 +51,7 @@ rm -f *.zip
 
 ipcc_package_name=${IPCC_PACKAGE_PREFIX}_${VERSION}.ipcc.zip
 echo Making package $ipcc_package_name
-cp ../doc/README.txt .
+cp ../README.txt .
 zip -r $ipcc_package_name README.txt *.ipcc &> /dev/null
 rm -rf README.txt *.ipcc
 
