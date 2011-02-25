@@ -33,6 +33,8 @@
 	<string>My T-Mobile</string>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
 	<string>+447786205094</string>
+	<key>RoamingVoicemailPilotNumber</key>
+	<string>+18056377243</string>
 	<key>Services</key>
 	<array>
 		<dict>
