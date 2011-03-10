@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildMachineOSBuild</key>
+	<string>10A433</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -19,22 +21,24 @@
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>9.0</string>
+	<string>10.0</string>
 	<key>DTCompiler</key>
 	<string>4.2</string>
 	<key>DTPlatformBuild</key>
-	<string>8C134a</string>
+	<string></string>
 	<key>DTPlatformName</key>
 	<string>iphoneos</string>
 	<key>DTPlatformVersion</key>
-	<string>4.2 Seed 2</string>
+	<string>4.3</string>
+	<key>DTSDKBuild</key>
+	<string>8F177</string>
 	<key>DTSDKName</key>
-	<string>iphoneos4.2.internal</string>
+	<string>iphoneos4.3.internal</string>
 	<key>DTXcode</key>
-	<string>0325</string>
+	<string>0400</string>
 	<key>DTXcodeBuild</key>
-	<string>10M2423</string>
+	<string>10M2515</string>
 	<key>MinimumOSVersion</key>
-	<string>4.2</string>
+	<string>4.3</string>
 </dict>
 </plist>
