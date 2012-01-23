@@ -3,13 +3,13 @@ Bundles Credit
 --------------------------------------------------------------
 Sorin Ionescu <sorin.ionescu@gmail.com>
 
-© 2009-2011 Copyright by Sorin Ionescu. All Rights Reserved.
+© 2009-2012 Copyright by Sorin Ionescu. All Rights Reserved.
 
 --------------------------------------------------------------
 Attention Required
 --------------------------------------------------------------
 Full Guide: http://j.mp/TmoUSA
-Please Donate: http://j.mp/TmoUSAd
+Please Donate: http://j.mp/TmoUSAD
 
 --------------------------------------------------------------
 How to Enable Carrier Bundle Support in iTunes for Mac OS X
