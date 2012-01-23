@@ -6,8 +6,16 @@
 	<true/>
 	<key>CarrierName</key>
 	<string>T-Mobile</string>
+	<key>CustomerServicePhoneNumber</key>
+	<string>611</string>
+	<key>HangUpCallsWhenPlacingEmergencyCall</key>
+	<false/>
 	<key>MMS</key>
 	<dict>
+		<key>AllowReturnReports</key>
+		<false/>
+		<key>GroupModeAllowUserOverride</key>
+		<false/>
 		<key>GroupModeEnabled</key>
 		<false/>
 		<key>MMSC</key>
@@ -18,6 +26,8 @@
 		<integer>10</integer>
 		<key>MaxVideoBitrate</key>
 		<integer>131072</integer>
+		<key>OnWhileRoaming</key>
+		<false/>
 		<key>Proxy</key>
 		<string>216.155.165.50:8080</string>
 		<key>UserAgent</key>
@@ -31,8 +41,42 @@
 	<string>http://my.t-mobile.com</string>
 	<key>MyAccountURLTitle</key>
 	<string>My T-Mobile</string>
+	<key>OTASoftwareUpdate</key>
+	<dict>
+		<key>SoftwareUpdateOptInRequired</key>
+		<true/>
+		<key>AllowDownloadOverCellular</key>
+		<false/>
+	</dict>
+	<key>PRIFileName</key>
+		<string>carrier.pri</string>
+	<key>PRIRawSignature</key>
+	<data>
+		SoRinPry1LH3Y2MXvuAQkrxMyb4xrT903T1fkq5cXQvt2DExg0K5AkQbLQlUYyT6RUyR
+		xtyBfQfqYl+Ku99jqIKX101gc1bU3LmAE4kxu5GtUAvq5vM5BV2Dcc5qdykMTPdDQr8g
+		lTbuyPvGIFd5R4cXvHcE1Luxjxh5o8drQ3A=
+	</data>
+	<key>PRISignature</key>
+	<data>
+		SoRin8rYt8MYpDDLYMtt388uY1kuP5mFgF3Y63A+K5K5skmt9FSuem18hDBRLjwk/Rbk
+		bbo5881M+52U0dUQ3LbhdjRqfLgqj1jtA80Y8oryLm1YDtYoh588f8Sk555utfxMew5o
+		hKq1S38bk8Qa81gh8oYXMtdyF6t8+GXkLko=
+	</data>
+	<key>PriVersion</key>
+	<string>00.01.012</string>
 	<key>PhoneNumberRegistrationGatewayAddress</key>
-	<string>+447786205094</string>
+	<array>
+		<string>+447937985200</string>
+		<string>+447937985201</string>
+		<string>+447937985202</string>
+		<string>+447937985203</string>
+		<string>+447937985204</string>
+		<string>+447937985205</string>
+		<string>+447937985206</string>
+		<string>+447937985207</string>
+		<string>+447937985208</string>
+		<string>+447937985209</string>
+	</array>
 	<key>RegistrationOptInRequired</key>
 	<true/>
 	<key>RoamingVoicemailPilotNumber</key>
@@ -68,8 +112,12 @@
 	<false/>
 	<key>ShowCallForwarding</key>
 	<false/>
+	<key>ShowDialAssist</key>
+	<true/>
 	<key>ShowTTY</key>
 	<false/>
+	<key>StaticNATType</key>
+	<integer>208</integer>
 	<key>StatusBarImages</key>
 	<array>
 		<dict>
@@ -83,6 +131,8 @@
 			<string>FSO_CARRIER_T-Mobile US.png</string>
 			<key>StatusBarCarrierName</key>
 			<string>T-Mobile</string>
+			<key>TransparentShadowedImage</key>
+			<string>TS_CARRIER_T-Mobile US.png</string>
 		</dict>
 	</array>
 	<key>StockSymboli</key>
@@ -100,6 +150,12 @@
 	</array>
 	<key>SupportsNITZ</key>
 	<true/>
+	<key>SupportsUserBusyCauseCode</key>
+	<false/>
+	<key>SuspendFastDormancyAllowed</key>
+	<true/>
+	<key>TearDownTetheringDataContextDuringAuthentication</key>
+	<false/>
 	<key>VVMIgnoresIntlDataRoaming</key>
 	<false/>
 	<key>VisualVoicemailServiceName</key>

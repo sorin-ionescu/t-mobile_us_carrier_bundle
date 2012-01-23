@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>10A433</string>
+	<string>10H575</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -12,8 +12,12 @@
 	<string>com.apple.TMobile_us</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>TMobile_us</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>11.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -21,24 +25,28 @@
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>10.0</string>
+	<string>11.0</string>
 	<key>DTCompiler</key>
-	<string>4.2</string>
+	<string></string>
 	<key>DTPlatformBuild</key>
 	<string></string>
 	<key>DTPlatformName</key>
 	<string>iphoneos</string>
 	<key>DTPlatformVersion</key>
-	<string>4.3</string>
+	<string>5.0</string>
 	<key>DTSDKBuild</key>
-	<string>8F177</string>
+	<string>9A316</string>
 	<key>DTSDKName</key>
-	<string>iphoneos4.3.internal</string>
+	<string>iphoneos5.0.internal</string>
 	<key>DTXcode</key>
-	<string>0400</string>
+	<string>0420</string>
 	<key>DTXcodeBuild</key>
-	<string>10M2515</string>
+	<string>4C175</string>
 	<key>MinimumOSVersion</key>
-	<string>4.3</string>
+	<string>5.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+	</array>
 </dict>
 </plist>
