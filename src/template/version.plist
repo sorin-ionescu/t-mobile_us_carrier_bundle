@@ -5,12 +5,12 @@
 	<key>BuildVersion</key>
 	<string>1</string>
 	<key>CFBundleShortVersionString</key>
-	<string>11.0.0</string>
+	<string>12.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>11.0</string>
+	<string>12.0</string>
 	<key>ProjectName</key>
 	<string>CarrierBundles</string>
 	<key>SourceVersion</key>
-	<string>4450000</string>
+	<string>4970000</string>
 </dict>
 </plist>
