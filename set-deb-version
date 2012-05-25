@@ -1,0 +1,23 @@
+#!/bin/bash
+#===============================================================================
+#
+#          FILE:  set-deb-version
+#   DESCRIPTION:  Sets the Cydia package version.
+#        AUTHOR:  Sorin Ionescu <sorin.ionescu@gmail.com>
+#       VERSION:  1.0.1
+#===============================================================================
+
+cd "$( dirname "$0" )"
+
+if [[ -z "$1" ]]; then
+	echo "$0: version cannot be empty" >&2
+	exit 1
+fi
+
+for bundle in src/*; do
+	sed \
+		-i .orig \
+		"s/^Version: .*$/Version: ${1}/g" \
+		"$bundle/debian/control"
+done
+

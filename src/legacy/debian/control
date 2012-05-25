@@ -1,0 +1,23 @@
+Author: Sorin Ionescu <sorin.ionescu@gmail.com>
+Maintainer: poetic_folly <poetic_folly@modmyi.com>
+Name: T-Mobile US - Legacy
+Package: com.sorin.t-mobile-us.legacy
+Section: Tweaks
+Version: 1.6.0
+Architecture: iphoneos-arm
+Provides: com.sorin.t-mobile-us
+Conflicts: com.sorin.t-mobile-us
+Depends: firmware (>= 5.0)
+Description: T-Mobile US carrier support for legacy plans.
+ MUST READ: http://j.mp/TmoUSA
+ PLEASE DONATE: http://j.mp/TmoUSAd
+ It contains carrier settings for MMS, Internet, and tethering.
+ Reboot after installation/uninstallation for changes to take effect.
+ If you experience problems due to previously installed carrier support
+ bundles, mobile configuration files, or hacks found in Cydia, reset
+ your network configuration:
+ 	Settings > General > Reset > Reset Network Settings.
+Homepage: http://modmyi.com/info/legacy.php
+Depiction: http://modmyi.com/info/legacy.d.php
+Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>
+
